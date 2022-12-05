@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>LINE Retail Society</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PW7HPDW');</script>
+  <link href="./img/favicom.ico" rel="icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+-->
+  <link href='css/ekachon.css' rel="stylesheet" type="text/css">
+  <link href='css/style.css' rel="stylesheet" type="text/css">
+  <link href='css/button.css' rel="stylesheet" type="text/css">
+  <!--<link href='css/add.css' rel="stylesheet" type="text/css">-->
+  <link href='css/vdo.css' rel="stylesheet" type="text/css">
+  <link href='css/w3.css' rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/rank.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+  <style type="text/css">
+    .w3-container, .w3-panel {
+      padding:0px;
+    }
+  </style>
+</head>
+
+<body class="body1" data-spy="scroll" data-target=".navbar" data-offset="60" style="background-color: #fff;">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW7HPDW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#myPage" onclick="location.href='index.html'" style="font-size: 12px;">LINE Retail Society</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="navbar1">
+    <center>
+      <div style="max-width:400px;">
+        <div class="iconlink" onClick="window.location='home.html';">
+          <div style="width:28px;"><img src="./img/gift.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">ลุ้นของขวัญ</div>
+        </div>
+        <div class="iconlink" onClick="window.location='listrewards.html';" style="background-color: #002d63;">
+          <div style="width:28px;"><img src="./img/icon-box.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">ของขวัญ</div>
+        </div>
+        <div class="iconlink" onClick="window.location='listgift.html';">
+          <div style="width:28px;"><img src="./img/icon-who.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">ใครได้แล้ว</div>
+        </div>
+        <div class="iconlink" onClick="window.location='social.html';">
+          <div style="width:28px;"><img src="./img/social.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">พูดคุย</div>
+        </div>
+        <div class="iconlink" onClick="window.location='giftforyou.html';">
+          <div style="width:28px;"><img src="./img/about.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">รางวัล</div>
+        </div>
+     </div>
+    </center>
+  </div>
+
+
+  <main id="main">
+    <div class="container">
+      <center>
+        <div style="margin-top:70px;"><img src="./img/logo_worldcup.png" style="width:100%; max-width: 150px;"></div>
+        <div class='btn-t33' style='margin-top:20px;background-color: #94a9b3;border: solid #94a9b3 1px;'>รายการของขวัญปีใหม่</div>
+          <div id="GiftBox2023"></div>
+          <div class="clr" style="height: 90px;"></div>
+
+
+<!--
+          <div style="margin-left: 7px;">
+            <div class="gift-box"><img src="img/gift-10.jpg" style="width:100%"><br>Starbucks<br>1,000 บาท<br><font color="#ff0000">20 รายการ</font></div>
+            <div class="gift-box"><img src="img/gift-10.jpg" style="width:100%"><br>Starbucks<br>200 บาท</div>
+            <div class="gift-box"><img src="img/gift-11.jpg" style="width:100%"><br>Voucher Lotus<br>100 บาท</div>
+            <div class="gift-box"><img src="img/gift-01.jpg" style="width:100%"><br>กระเป๋า<br>กระสอบเล็ก</div>
+            <div class="gift-box"><img src="img/gift-02.jpg" style="width:100%"><br>กระเป๋า<br>กระสอบใหญ่</div>
+            <div class="gift-box"><img src="img/gift-03.jpg" style="width:100%"><br>กระเป๋า<br>กระสอบ Big</div>
+            <div class="gift-box"><img src="img/gift-04.jpg" style="width:100%"><br>กระเป๋าไวนิล<br>ขนาดเล็ก</div>
+            <div class="gift-box"><img src="img/gift-05.jpg" style="width:100%"><br>กระเป๋าไวนิล<br>ขนาดกลาง</div>
+            <div class="gift-box"><img src="img/gift-06.jpg" style="width:100%"><br>กระเป๋าไวนิล<br>ขนาดใหญ่</div>
+            <div class="gift-box"><img src="img/gift-07.jpg" style="width:100%"><br>กระเป๋าพับได้<br>Shopping</div>
+            <div class="gift-box"><img src="img/gift-08.jpg" style="width:100%"><br>ร่มพับ<br>ttb</div>
+            <div class="gift-box"><img src="img/gift-09.jpg" style="width:100%"><br>กระเป๋าผ้าดิบ<br>สายส้ม-ฟ้า</div>
+          </div>
+          <div class="clr" style="height: 20px;"></div>
+          <div class="btn-survey" onclick="window.location.href='question.html';" style="background-color: #f68b1f;border:2px solid #fff;">ตอบคำถาม 1 ข้อเพื่อลุ้นรางวัล</div>
+-->
+
+<!--
+        <div class="box-profile">
+          <div id="MyProfile"></div>
+        </div>
+-->
+      </center>
+
+<!--
+      <center>
+        <div class='btn-t33' style='background-color: #94a9b3;border: solid #94a9b3 1px;'>คลิกเลือกทีมที่คุณคิดว่าจะชนะ</div>
+        <div id="DisplayTeam"></div>
+      </center>
+-->
+    </div>
+  </main>
+
+
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4" style="background: #fff;">
+      <div class="w3-container" style="width:95%;margin:auto;min-height: 270px;text-align: center;">
+          <div id="DisplayGift"></div>
+<!--
+          <div class="txt-qq" style="color:#000000;font-size: 12px; color:#ff0000;margin-top:20px;"><u>กกก</u></div>
+          <div><br><img src="./img/timer.gif" width="230px"></div>
+          <div style="padding:20px 10px; color:#0056ff;font-weight: 600;">ขณะนี้เราเริ่มจับเวลาในการตอบคำถามแล้ว<br>หากออกจากคำถามนี้โดยไม่ส่งคำตอบ<br>จะได้ถือว่าคุณตอบคำถามผิด<br>ต้องกลับมาตอบใหม่ในวันพรุ่งนี้</div>
+          <div class="btn-t1" onclick="CloseAll()">เริ่มตอบคำถาม</div><br><br>
+
+
+        <div id="DisplayRewards"></div>
+-->
+      </div>
+    </div>
+    <div class="clr" style="height:70px;"></div>
+  </div>
+
+<!--
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <div class="footer-main">
+      @<span class="footer-font-green">LINE</span> 
+      <span class="footer-font-navi">Retail</span> 
+      <span class="footer-font-blue">So</span><span class="footer-font-org">ciety</span>
+    </div>
+    <div class="clr" style="height: 40px;"></div>
+  </footer>
+-->
+<script src="./js/listrewards.js"></script>
+</body>
+</html>

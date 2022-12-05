@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>LINE Retail Society</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PW7HPDW');</script>
+  <link href="./img/favicom.ico" rel="icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+-->
+  <link href='css/ekachon.css' rel="stylesheet" type="text/css">
+  <link href='css/style.css' rel="stylesheet" type="text/css">
+  <link href='css/button.css' rel="stylesheet" type="text/css">
+  <!--<link href='css/add.css' rel="stylesheet" type="text/css">-->
+  <link href='css/vdo.css' rel="stylesheet" type="text/css">
+  <link href='css/w3.css' rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/rank.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+  <style type="text/css">
+    .w3-container, .w3-panel {
+      padding:0px;
+    }
+  </style>
+
+
+</head>
+
+<body class="body2" data-spy="scroll" data-target=".navbar" data-offset="60" style="background-color: #fff;">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW7HPDW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#myPage" onclick="location.href='index.html'" style="font-size: 12px;">LINE Retail Society</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="navbar1">
+    <center>
+      <div style="max-width:400px;">
+        <div class="iconlink" onClick="window.location='home.html';" style="background-color: #002d63;">
+          <div style="width:28px;"><img src="./img/gift.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">ลุ้นของขวัญ</div>
+        </div>
+        <div class="iconlink" onClick="window.location='listrewards.html';">
+          <div style="width:28px;"><img src="./img/icon-box.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">ของขวัญ</div>
+        </div>
+        <div class="iconlink" onClick="window.location='listgift.html';">
+          <div style="width:28px;"><img src="./img/icon-who.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">ใครได้แล้ว</div>
+        </div>
+        <div class="iconlink" onClick="window.location='social.html';">
+          <div style="width:28px;"><img src="./img/social.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">พูดคุย</div>
+        </div>
+        <div class="iconlink" onClick="window.location='giftforyou.html';">
+          <div style="width:28px;"><img src="./img/about.png" style="width:22px;"></div>
+          <div style="font-size: 11px;">รางวัล</div>
+        </div>
+     </div>
+    </center>
+  </div>
+
+
+  <main id="main">
+    <div class="container">
+      <center>
+        <div style="margin-top:70px;margin-bottom: 30px;"><img src="./img/logo_worldcup.png" style="width:100%; max-width: 150px;"></div>
+        <div style="font-size: 12px; font-weight: 600;padding-bottom: 0px;">LINE Retail Society<br>ขอร่วมส่งความสุขปีใหม่ 2566<br>ระหว่างวันที่ 20-31 ธันวาคม 2565<br>เพียงตอบคำถามให้ถูกต้อง และลุ้นรับของขวัญไปเลย</div>
+
+        <div id="loading" style="margin-top:20px;"><img src="./img/loading1.gif" style="width:50px;"></div>
+
+        <div id="Question" class="btn-survey" onclick="window.location.href='quiz.html';" style="margin-top:30px;background-color: #f68b1f;border:2px solid #fff;display: none;width:200px;">ร่วมสนุกตอบคำถาม<br>เพื่อลุ้นของขวัญปีใหม่</div>
+        <div id="ShowGift" class="btn-t3" onclick="window.location.href='giftforyou.html';" style="margin-top:30px;border:2px solid #002d63;padding:7px 20px;display: none;width:200px;border-radius: 5px;">คลิกดูรายการ<br>ของขวัญปีใหม่ของคุณ</div>
+        <div id="QuizFalse" style="font-size: 12px; color:#ff0000;display: none;margin-top:30px;">วันนี้คุณตอบคำถามไม่ถูกต้อง<br>พรุ่งนี้เข้ามาลุ้นตอบคำถามกันใหม่น้า</div>
+
+<!--
+        <div class="box-profile">
+          <div id="MyProfile"></div>
+        </div>
+-->
+      </center>
+
+<!--
+      <center>
+        <div class='btn-t33' style='background-color: #94a9b3;border: solid #94a9b3 1px;'>คลิกเลือกทีมที่คุณคิดว่าจะชนะ</div>
+        <div id="DisplayTeam"></div>
+      </center>
+-->
+    </div>
+  </main>
+
+
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4" style="background: #fff;">
+      <div class="w3-container" style="width:95%;margin:auto;min-height: 270px;">
+        <div id="DisplayTeamSelected"></div>
+      </div>
+    </div>
+    <div class="clr" style="height:70px;"></div>
+  </div>
+
+  <div id="id02" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4" style="background: #fff;">
+      <div class="w3-container" style="width:95%;margin:auto;min-height: 270px;">
+        <center>
+          <div class='btn-t33' style='margin-top:25px;background-color: #94a9b3;border: solid #94a9b3 1px;'>กิจรรมลุ้นรับของขวัญปีใหม่</div>
+          <div style="margin-top:20px; margin-bottom: 30px;"><img src="./img/logo_worldcup.png" style="width:100%; max-width: 250px;"></div>
+          <div style="font-size: 11px; text-align: left; padding:0px 15px 10px 15px;color:#f68b1f;">LINE Retail Society ชวนคุณเข้าร่วมกิจกรรมลุ้นรับของขวัญปีใหม่ โดยมีเงื่อนไขการเข้าร่วมลุ้นของขวัญปีใหม่ ดังนี้</div>
+          <ul style="text-align: left;padding-right: 10px; margin-left: -10px; font-size: 11px;">
+            <li>ผู้เข้าร่วมกิจกรรมลุ้นของขวัญปีใหม่จะต้องตอบคำถามให้ถูกต้องก่อนที่จะไปลุ้นรับรางวัล</li>
+            <li>ผู้เข้าร่วมกิจกรรมรับของขวัญปีใหม่ได้เพียง 1 รายการเท่านั้น</li>
+            <li>กรณีที่ตอบคำถามผิด ผู้เข้าร่วมกิจกรรมสามารถเข้ามาตอบใหม่ได้ในวันต่อไปจนกว่าจะสิ้นสุดกิจกรรม</li>
+            <li>ของขวัญปีใหม่ที่ได้จะใช้วิธีการสุ่มเลือกโดยระบบ ไม่สามารถกำหนดของรางวัลเองได้</li>
+            <li>ผู้รับของรางวัลที่ปฏิบัติงาน ณ สาขาจะต้องกรอกหมายเลขโทรศัพท์ และที่อยู่สำหรับการจัดส่งของรางวัล</li>
+            <li>กรณีที่ผู้เข้าร่วมกิจกรรมปฏิบัติหน้าที่อยู่ ณ สำนักงานใหญ่ให้ติดต่อขอรับรางวัลได้ที่ชั้น 18</li>
+            <li>ของรางวัลไม่สามารถเปลี่ยนเป็นเงินสดได้ในทุกกรณี</li>
+            <li>การจัดส่งของรางวัลจะเริ่มจัดส่งประมาณ 1 เดือนหลังจากกิจกรรมสิ้นสุดลง</li>
+            <li>ผู้รับของขวัญปีใหม่จะต้องเป็พนักงานจนถึงวันที่จัดส่งของรางวัล</li>
+            <li>กติกาการและเงื่อนไขต่างๆ สามารถเปลี่ยนแปลงได้ตามความเหมาะสม</li>
+          </ul>
+          <div class="clr"></div>
+          <div class="btn-t2" onclick="CloseAll()">ปิดหน้าต่าง</div>
+          <div class="clr" style="height: 30px;"></div>
+        </center>
+      </div>
+    </div>
+    <div class="clr" style="height:70px;"></div>
+  </div>
+
+<!--
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <div class="footer-main">
+      @<span class="footer-font-green">LINE</span> 
+      <span class="footer-font-navi">Retail</span> 
+      <span class="footer-font-blue">So</span><span class="footer-font-org">ciety</span>
+    </div>
+    <div class="clr" style="height: 40px;"></div>
+  </footer>
+-->
+<script src="./js/home.js"></script>
+</body>
+</html>
