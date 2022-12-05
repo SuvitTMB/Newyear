@@ -400,7 +400,7 @@ function ClearQuiz() {
     str1 += '<div style="margin:30px;"><img src="./img/true.png" width="100px;"></div>';
     str1 += '<div class="txt-qq" style="color:#f68b1f;height:80px;margin-top:30px;"><b>ยินดีด้วยคุณตอบคำถามได้ถูกต้อง<br>คูณได้สิทธิ์ในการลุ้นรับของขวัญปีใหม่</b><div>';
     str2 += '<div style="padding-top:20px;"><img src="./img/true.png" width="70px;"></div>';
-    str2 += '<div class="txt-qq" style="margin-top:15px;">ยินดีด้วยคุณตอบคำถามได้ถูกต้อง<br>เรามีข้อเสนอให้คุณ<div>';
+    str2 += '<div class="txt-qq" style="margin-top:15px;">ยินดีด้วยคุณตอบคำถามได้ถูกต้อง<br><br><div>';
     //str2 += '<div style="padding:20px 0;color:#0056ff">คุณสามารถเปลี่ยนคะแนนที่ได้รับได้ใหม่<br>โดยคุณอาจจะได้รับคะแนนที่ <b>เพิ่มขึ้น</b> หรือ <b>ลดลง</b> ก็ได้</div>';
     str2 += '<div class="btn-t1" onclick="CheckGift()" style="margin-top;25px;">คลิกเพื่อสุ่มรับของขวัญปีใหม่</div>';
     str2 += '<div style="padding:15px 10px;color:#000;font-weight:600;margin-top;25px;">กรุณากดรับของขวัญปีใหม่ก่อนที่จะออกจากหน้านี้ไปน้า</div>';
