@@ -473,7 +473,7 @@ function RedeemGift() {
         ResultQuiz : 'True'
       });
       CheckStock(xGiftCode);
-      str += '<div class="txt-q" style="margin:30px auto 10px auto;">ระบบได้ทำการบันทึกรายการ<br>การสุ่มของรางวัลของคุณเรียบร้อยแล้ว<br>ของรางวัลที่คุณได้รับคือ</div>';
+      str += '<div class="txt-q" style="margin:30px auto 10px auto;">ระบบได้ทำการบันทึกรายการ<br>การสุ่มของขงัญของคุณเรียบร้อยแล้ว<br>ของขงัญที่คุณได้รับคือ</div>';
       str += '<div class="txt-qq"><img src="img/'+ xGiftCode +'.jpg" style="width:200px;""><br>'+ xGiftName +'</div>';
       str += '<div class="btn-t1" onclick="gotogift()" style="margin-top;25px;">คลิกเพื่อตรวจสอบสถานที่<br>สำหรับการจัดส่งของขวัญปีใหม่</div>';
       $("#DisplayChoice").html(str);
