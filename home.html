@@ -33,6 +33,10 @@
     .w3-container, .w3-panel {
       padding:0px;
     }
+    .stock {
+      padding:7px 20px; border:2px solid #fff; border-radius: 5px; width: 230px; text-align: center; 
+      background-color: #999; color:#fff; margin:15px auto;
+    }
   </style>
 
 
@@ -83,27 +87,18 @@
     <div class="container">
       <center>
         <div style="margin-top:70px;margin-bottom: 30px;"><img src="./img/logo_worldcup.png" style="width:100%; max-width: 150px;"></div>
-        <div style="font-size: 12px; font-weight: 600;padding-bottom: 0px;">LINE Retail Society<br>ขอร่วมส่งความสุขปีใหม่ 2566<br>ระหว่างวันที่ 20-31 ธันวาคม 2565<br>เพียงตอบคำถามให้ถูกต้อง และลุ้นรับของขวัญไปเลย</div>
+        <div style="font-size: 12px; font-weight: 600;padding-bottom: 0px;">LINE Retail Society<br>ขอร่วมส่งความสุขปีใหม่ 2566<br>ระหว่างวันที่ 20 ธค. 65 - 1 มค. 66<br>เพียงตอบคำถามให้ถูกต้อง และลุ้นรับของขวัญไปเลย</div>
 
         <div id="loading" style="margin-top:20px;"><img src="./img/loading1.gif" style="width:50px;"></div>
+        <div id="DisplayStock" style="display: none;"></div>
+        <div id="Question" class="btn-survey" onclick="window.location.href='quiz.html';" style="margin-top:15px;background-color: #f68b1f;border:2px solid #fff;display: none;width:200px;">ร่วมสนุกตอบคำถาม<br>เพื่อลุ้นของขวัญปีใหม่</div>
 
-        <div id="Question" class="btn-survey" onclick="window.location.href='quiz.html';" style="margin-top:30px;background-color: #f68b1f;border:2px solid #fff;display: none;width:200px;">ร่วมสนุกตอบคำถาม<br>เพื่อลุ้นของขวัญปีใหม่</div>
-        <div id="ShowGift" class="btn-t3" onclick="window.location.href='giftforyou.html';" style="margin-top:30px;border:2px solid #002d63;padding:7px 20px;display: none;width:200px;border-radius: 5px;">คลิกดูรายการ<br>ของขวัญปีใหม่ของคุณ</div>
+        <div id="EndStock" class="btn-survey" style="margin-top:15px;background-color: #ff0000;border:2px solid #fff;display: none;width:200px;">ขณะนี้ของขวัญปีใหม่หมดแล้ว</div>
+
+
+        <div id="ShowGift" class="btn-t3" onclick="window.location.href='giftforyou.html';" style="margin-top:15px;border:2px solid #002d63;padding:7px 20px;display: none;width:200px;border-radius: 5px;">คลิกดูรายการ<br>ของขวัญปีใหม่ของคุณ</div>
         <div id="QuizFalse" style="font-size: 12px; color:#ff0000;display: none;margin-top:30px;">วันนี้คุณตอบคำถามไม่ถูกต้อง<br>พรุ่งนี้เข้ามาลุ้นตอบคำถามกันใหม่น้า</div>
-
-<!--
-        <div class="box-profile">
-          <div id="MyProfile"></div>
-        </div>
--->
       </center>
-
-<!--
-      <center>
-        <div class='btn-t33' style='background-color: #94a9b3;border: solid #94a9b3 1px;'>คลิกเลือกทีมที่คุณคิดว่าจะชนะ</div>
-        <div id="DisplayTeam"></div>
-      </center>
--->
     </div>
   </main>
 
@@ -146,6 +141,14 @@
   </div>
 
 <!--
+  <div id="id03" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4" style="background: #fff;">
+      <div class="w3-container" style="width:95%;margin:auto;min-height: 270px;">
+        <div id="DisplayTeamSelected"></div>
+      </div>
+    </div>
+    <div class="clr" style="height:70px;"></div>
+  </div>
   <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
     <div class="footer-main">
