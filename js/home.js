@@ -1,1 +1,113 @@
-var _0x132003=_0x3064;(function(_0x3d0ba7,_0xeac17d){var _0x565328=_0x3064,_0x132488=_0x3d0ba7();while(!![]){try{var _0x384564=-parseInt(_0x565328(0x120))/0x1+-parseInt(_0x565328(0x127))/0x2+-parseInt(_0x565328(0x103))/0x3*(-parseInt(_0x565328(0x10e))/0x4)+parseInt(_0x565328(0x11a))/0x5+parseInt(_0x565328(0x10a))/0x6*(parseInt(_0x565328(0x113))/0x7)+parseInt(_0x565328(0x12e))/0x8*(-parseInt(_0x565328(0x130))/0x9)+parseInt(_0x565328(0x10d))/0xa;if(_0x384564===_0xeac17d)break;else _0x132488['push'](_0x132488['shift']());}catch(_0x1686c3){_0x132488['push'](_0x132488['shift']());}}}(_0x41a5,0x84a75));var dateString=new Date()[_0x132003(0x11f)](_0x132003(0x105),{'timeZone':_0x132003(0x121)}),today=new Date(),dd=String(today['getDate']())['padStart'](0x2,'0'),mm=String(today[_0x132003(0x111)]()+0x1)[_0x132003(0x104)](0x2,'0'),yyyy=today['getFullYear']()+0x21f;today=dd+'/'+mm+'/'+yyyy;var xCheck=0x0;$(document)['ready'](function(){var _0x32e9a0=_0x132003;sessionStorage['getItem'](_0x32e9a0(0x118))==null&&(location[_0x32e9a0(0x128)]=_0x32e9a0(0x110)),sessionStorage[_0x32e9a0(0x10b)](_0x32e9a0(0x129))==null&&(document[_0x32e9a0(0x124)]('id02')[_0x32e9a0(0x114)][_0x32e9a0(0x112)]=_0x32e9a0(0x106),sessionStorage[_0x32e9a0(0x123)](_0x32e9a0(0x129),_0x32e9a0(0x117))),Connect_DB();});function _0x3064(_0x1868f7,_0x4d6c1a){var _0x41a583=_0x41a5();return _0x3064=function(_0x30642b,_0x211b6d){_0x30642b=_0x30642b-0x103;var _0x37e21c=_0x41a583[_0x30642b];return _0x37e21c;},_0x3064(_0x1868f7,_0x4d6c1a);}function Connect_DB(){var _0x132c85=_0x132003,_0x2fd55a={'apiKey':_0x132c85(0x12f),'authDomain':'retailproject-6f4fc.firebaseapp.com','projectId':_0x132c85(0x115),'storageBucket':'retailproject-6f4fc.appspot.com','messagingSenderId':_0x132c85(0x11b),'appId':_0x132c85(0x10f),'measurementId':'G-9SKTRHHSW9'};firebase[_0x132c85(0x12c)](_0x2fd55a),dbGift2023log=firebase[_0x132c85(0x12b)]()[_0x132c85(0x131)](_0x132c85(0x10c)),CheckQuiz();}function CheckQuiz(){var _0x27be36=_0x132003;dbGift2023log[_0x27be36(0x108)](_0x27be36(0x116),'==',sessionStorage['getItem'](_0x27be36(0x116)))[_0x27be36(0x108)](_0x27be36(0x12d),'==',_0x27be36(0x11c))[_0x27be36(0x11e)]()[_0x27be36(0x119)](_0x5f17e5=>{var _0x44a779=_0x27be36;_0x5f17e5[_0x44a779(0x107)](_0x2b3025=>{var _0x40f275=_0x44a779;xCheck=0x1,document[_0x40f275(0x124)](_0x40f275(0x122))[_0x40f275(0x114)][_0x40f275(0x112)]=_0x40f275(0x126),document[_0x40f275(0x124)]('ShowGift')[_0x40f275(0x114)][_0x40f275(0x112)]='block';}),xCheck==0x0&&CheckQuizDate();});}function CheckQuizDate(){var _0x459c4d=_0x132003,_0x53d5f9=0x0;dbGift2023log[_0x459c4d(0x108)](_0x459c4d(0x116),'==',sessionStorage[_0x459c4d(0x10b)](_0x459c4d(0x116)))[_0x459c4d(0x108)]('QuizDate','==',today)['get']()[_0x459c4d(0x119)](_0x19492d=>{var _0x20dd6e=_0x459c4d;_0x19492d[_0x20dd6e(0x107)](_0x3416e1=>{var _0x2366dd=_0x20dd6e;_0x53d5f9=0x1,document[_0x2366dd(0x124)](_0x2366dd(0x122))[_0x2366dd(0x114)][_0x2366dd(0x112)]=_0x2366dd(0x126),document[_0x2366dd(0x124)](_0x2366dd(0x12a))[_0x2366dd(0x114)][_0x2366dd(0x112)]=_0x2366dd(0x106);}),_0x53d5f9==0x0&&(CheckQuizDate(),document[_0x20dd6e(0x124)]('loading')[_0x20dd6e(0x114)][_0x20dd6e(0x112)]=_0x20dd6e(0x126),document[_0x20dd6e(0x124)](_0x20dd6e(0x125))[_0x20dd6e(0x114)]['display']=_0x20dd6e(0x106));});}function _0x41a5(){var _0x15037b=['en-US','block','forEach','where','id02','37740mAdsHp','getItem','Gift2023log','3557530NMaAvv','3860sHjIeL','1:653667385625:web:a5aed08500de80839f0588','index.html','getMonth','display','679PqbYaf','style','retailproject-6f4fc','LineID','News','EmpID_Gift2023','then','4924350BrSsvX','653667385625','True','id01','get','toLocaleString','1041413wRnuFl','Asia/Jakarta','loading','setItem','getElementById','Question','none','29732YHOYgP','href','CheckNews','QuizFalse','firestore','initializeApp','ResultQuiz','240mvdbGe','AIzaSyDfTJJ425U4OY0xac6jdhtSxDeuJ-OF-lE','235323JqoYqo','collection','1347iQfEQK','padStart'];_0x41a5=function(){return _0x15037b;};return _0x41a5();}function CloseAll(){var _0x1f36a7=_0x132003;document[_0x1f36a7(0x124)](_0x1f36a7(0x11d))['style'][_0x1f36a7(0x112)]=_0x1f36a7(0x126),document['getElementById'](_0x1f36a7(0x109))[_0x1f36a7(0x114)][_0x1f36a7(0x112)]=_0x1f36a7(0x126);}
+var dateString = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear()+543;
+today = dd + '/' + mm + '/' + yyyy;
+var xCheck = 0;
+var xStock = 0;
+
+$(document).ready(function () {
+  if(sessionStorage.getItem("EmpID_Gift2023")==null) { location.href = "index.html"; }
+  if(sessionStorage.getItem("CheckNews")==null) {
+    document.getElementById('id02').style.display='block';
+    sessionStorage.setItem("CheckNews", "News");
+  }
+  Connect_DB();
+});
+
+function Connect_DB() {
+  var firebaseConfig = {
+    apiKey: "AIzaSyDfTJJ425U4OY0xac6jdhtSxDeuJ-OF-lE",
+    authDomain: "retailproject-6f4fc.firebaseapp.com",
+    projectId: "retailproject-6f4fc",
+    storageBucket: "retailproject-6f4fc.appspot.com",
+    messagingSenderId: "653667385625",
+    appId: "1:653667385625:web:a5aed08500de80839f0588",
+    measurementId: "G-9SKTRHHSW9"
+  };
+  firebase.initializeApp(firebaseConfig);
+  dbGift2023Rewards = firebase.firestore().collection("Gift2023Rewards");
+  dbGift2023log = firebase.firestore().collection("Gift2023log");
+  CheckStock();
+  CheckQuiz();
+}
+
+
+
+function CheckStock() {
+  var str ="";
+  dbGift2023Rewards
+  .where('LineID','==','')
+  .get().then((snapshot)=> {
+    snapshot.forEach(doc=> {
+      xStock = xStock+1;
+    });
+    document.getElementById('DisplayStock').style.display='block';
+    str = '<div class="stock">ของขวัญคงเหลือ : <b>'+ xStock +'</b> รายการ</div>';
+    $("#DisplayStock").html(str);  
+  });
+}
+
+
+
+function CheckQuiz() {
+  dbGift2023log
+  .where('LineID','==',sessionStorage.getItem("LineID"))
+  .where('ResultQuiz','==','True')
+  .get().then((snapshot)=> {
+    snapshot.forEach(doc=> {
+      xCheck = 1;
+      document.getElementById('loading').style.display='none';
+      document.getElementById('DisplayStock').style.display='block';
+      if(xStock!=0) {
+        document.getElementById('ShowGift').style.display='block';
+      } else {
+        document.getElementById('EndStock').style.display='block';
+      }
+    });
+    if(xCheck==0) {
+      CheckQuizDate();
+    }
+  });
+}
+
+
+function CheckQuizDate() {
+  var aCheck = 0;
+  dbGift2023log
+  .where('LineID','==',sessionStorage.getItem("LineID"))
+  .where('QuizDate','==',today)
+  .get().then((snapshot)=> {
+    snapshot.forEach(doc=> {
+      aCheck = 1;
+      document.getElementById('loading').style.display='none';
+      if(xStock!=0) {
+        document.getElementById('QuizFalse').style.display='block';
+      } else {
+        document.getElementById('EndStock').style.display='block';
+      }
+
+    });
+    if(aCheck==0) {
+      CheckQuizDate();
+      document.getElementById('loading').style.display='none';
+
+      if(xStock!=0) {
+        document.getElementById('Question').style.display='block';
+      } else {
+        document.getElementById('EndStock').style.display='block';
+      }
+    }
+    //$("#GiftBox2023").html(str);  
+  });
+
+}
+
+function CloseAll() {
+  document.getElementById('id01').style.display='none';
+  document.getElementById('id02').style.display='none';
+}
+
+
+
