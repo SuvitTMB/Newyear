@@ -23,7 +23,7 @@ var dateString = "";
 var CheckQuizQuestion = "";
 var YourScore = 0;
 var sTypeSelect = "หมวดคำถามคลายเครียด";
-var sGroupQuiz = "WOW";
+var sGroupQuiz = "Newyear";
 //var sGroupQuiz = "QuizRelax";
 var sBadgeEng = "Badge-QuizRelax"; //ชื่อ badge
 var EidScorePoint = "";
@@ -160,9 +160,7 @@ function GetQuestion() {
       SumQuizFalse = doc.data().SumQuizFalse;
 
       if(doc.data().QuizTypeQuestion==1) {
-        //alert("Quiz : "+doc.data().QuizTypeQuestion);
-        //$("#DisplayDay").html("<div class='txt-q'><i>คำถามประจำวันที่ : "+ doc.data().QuizDate +"</i></div>");
-        //$("#DisplayDay").html("<div class='txt-q'>คำถามประจำวันที่ : "+ today +"</div>");
+        //$("#DisplayQuestion").html("<div class='txt-qq'>"+ doc.data().QuizQuestion +" - "+ doc.data().QuizAnswer +"</div>");
         $("#DisplayQuestion").html("<div class='txt-qq'>"+ doc.data().QuizQuestion +"</div>");
         EQuizForm += "<div style='margin-top:20px;'></div><center>";
         EQuizForm += "<div class='quiz-choice' onclick='ClickChoice(1,\""+ doc.data().QuizChoice1 +"\")' id='answer1'><input type='radio' name='a1'>"+ doc.data().QuizChoice1 +"</div>";
@@ -393,14 +391,14 @@ function ClearQuiz() {
   //alert(YourScore);
   if(YourScore!=0) {
     LastScore = YourScore;
-    $("#DisplayDay").html("<div class='txt-q'><b>LINE Retail Society</b><br>ร่วมส่งความสุขปีใหม่ 2565<br>ระหว่างวันที่ 20 ธค. 65 - 1 มค. 66</div>");
+    $("#DisplayDay").html("<div class='txt-q'><b>LINE Retail Society</b><br>ร่วมส่งความสุขปีใหม่ 2565<br>ระหว่างวันที่ 20-31 ธันวาคม 2565</div>");
     $("#DisplaySummary").html("<div class='txt-q'>กิจกรรมวันที่ : "+ today +"</div><div class='txt-qq'>คุณได้เข้าร่วมกิจกรรมนี้ไปแล้วในวันนี้</div>");
     var str1 = "";
     var str2 = "";
     str1 += '<div style="margin:30px;"><img src="./img/true.png" width="100px;"></div>';
     str1 += '<div class="txt-qq" style="color:#f68b1f;height:80px;margin-top:30px;"><b>ยินดีด้วยคุณตอบคำถามได้ถูกต้อง<br>คูณได้สิทธิ์ในการลุ้นรับของขวัญปีใหม่</b><div>';
     str2 += '<div style="padding-top:20px;"><img src="./img/true.png" width="70px;"></div>';
-    str2 += '<div class="txt-qq" style="margin-top:15px;">ยินดีด้วยคุณตอบคำถามได้ถูกต้อง<br>เรามีข้อเสนอให้คุณ<div>';
+    str2 += '<div class="txt-qq" style="margin-top:15px;">ยินดีด้วยคุณตอบคำถามได้ถูกต้อง<br> <br><div>';
     //str2 += '<div style="padding:20px 0;color:#0056ff">คุณสามารถเปลี่ยนคะแนนที่ได้รับได้ใหม่<br>โดยคุณอาจจะได้รับคะแนนที่ <b>เพิ่มขึ้น</b> หรือ <b>ลดลง</b> ก็ได้</div>';
     str2 += '<div class="btn-t1" onclick="CheckGift()" style="margin-top;25px;">คลิกเพื่อสุ่มรับของขวัญปีใหม่</div>';
     str2 += '<div style="padding:15px 10px;color:#000;font-weight:600;margin-top;25px;">กรุณากดรับของขวัญปีใหม่ก่อนที่จะออกจากหน้านี้ไปน้า</div>';
@@ -470,10 +468,12 @@ function RedeemGift() {
         EmpName : sessionStorage.getItem("EmpName_Gift2023"),
         DateRegister : dateString,
         RefID : xID,
+        Phone : sessionStorage.getItem("EmpPhone"),
+        address : sessionStorage.getItem("EmpAddress"),
         ResultQuiz : 'True'
       });
       CheckStock(xGiftCode);
-      str += '<div class="txt-q" style="margin:30px auto 10px auto;">ระบบได้ทำการบันทึกรายการ<br>การสุ่มของขงัญของคุณเรียบร้อยแล้ว<br>ของขงัญที่คุณได้รับคือ</div>';
+      str += '<div class="txt-q" style="margin:30px auto 10px auto;">ระบบได้ทำการบันทึกรายการ<br>การสุ่มของรางวัลของคุณเรียบร้อยแล้ว<br>ของรางวัลที่คุณได้รับคือ</div>';
       str += '<div class="txt-qq"><img src="img/'+ xGiftCode +'.jpg" style="width:200px;""><br>'+ xGiftName +'</div>';
       str += '<div class="btn-t1" onclick="gotogift()" style="margin-top;25px;">คลิกเพื่อตรวจสอบสถานที่<br>สำหรับการจัดส่งของขวัญปีใหม่</div>';
       $("#DisplayChoice").html(str);

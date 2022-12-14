@@ -79,9 +79,6 @@ function CheckRewards() {
 function SaveAddress(gid) {
   //var Eid = sessionStorage.getItem("EmpRefID");
   console.log(EidProfile+"==="+document.getElementById("txtEmpPhone").value);
-  //console.log(document.getElementById("txtEmpPhone").value);
-  //var xEmpPhone = document.getElementById("txtEmpPhone").value;
-  //var xEmpAddress = document.getElementById("txtEmpAddress").value;
   dbProfile.doc(EidProfile).update({
     empPhone : document.getElementById("txtEmpPhone").value,
     empAddress : document.getElementById("txtEmpAddress").value

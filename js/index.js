@@ -17,7 +17,7 @@ $(document).ready(function () {
   str += '<div class="NameLine">'+ sessionStorage.getItem("LineName")+'</div>';
   $("#MyProfile").html(str);  
   Connect_DB();
-*/  
+*/   
   main();
 });
 
@@ -88,8 +88,8 @@ function CheckData() {
         //document.getElementById('loading').style.display='none';
         //document.getElementById('OldSurvey').style.display='block';
         dbProfile.doc(sessionStorage.getItem("EmpRefID")).update({
-            linename : sessionStorage.getItem("LineName"),
-            empPicture : sessionStorage.getItem("LinePicture")
+          linename : sessionStorage.getItem("LineName"),
+          empPicture : sessionStorage.getItem("LinePicture")
         });
       } else {
         location.href = "https://liff.line.me/1655966947-KxrAqdyp";
@@ -172,6 +172,9 @@ function checkZero(data){
   return data;
 }
 
+function ClickBox() {
+  document.getElementById('id01').style.display='block';
+}
 
 function CloseAll() {
   document.getElementById('id01').style.display='none';
