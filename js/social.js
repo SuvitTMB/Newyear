@@ -46,9 +46,9 @@ function DisplayChat() {
   .limit(100).get().then( snapshot => {
     snapshot.forEach(doc=> {
       //doc.data().orderBy('PostTimeStamp','asc');
-      if(sessionStorage.getItem("LineID")!=doc.data().LineID) {
+      //if(sessionStorage.getItem("LineID")!=doc.data().LineID) {
         ShowChat(doc);
-      }
+      //}
     });
   })
   DisplayLog();
@@ -141,7 +141,9 @@ function CheckUpdate() {
   .where('PostTimeStamp','>',CheckLastTime)
   .get().then((snapshot)=> {
     snapshot.forEach(doc=> {
-      NewChat(doc);
+      if(sessionStorage.getItem("LineID")!=doc.data().LineID) {
+        NewChat(doc);
+      }
     });
   });
   timecountdown();
