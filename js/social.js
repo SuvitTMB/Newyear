@@ -46,7 +46,9 @@ function DisplayChat() {
   .limit(100).get().then( snapshot => {
     snapshot.forEach(doc=> {
       //doc.data().orderBy('PostTimeStamp','asc');
-      ShowChat(doc);
+      if(sessionStorage.getItem("LineID")!=doc.data().LineID) {
+        ShowChat(doc);
+      }
     });
   })
   DisplayLog();
