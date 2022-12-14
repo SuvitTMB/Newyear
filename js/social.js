@@ -1,1 +1,175 @@
-var _0x3155c4=_0x3b47;(function(_0x2329f6,_0x14edac){var _0x48f0bc=_0x3b47,_0x36e6f1=_0x2329f6();while(!![]){try{var _0xb6b893=parseInt(_0x48f0bc(0xaf))/0x1+parseInt(_0x48f0bc(0xc9))/0x2*(parseInt(_0x48f0bc(0xd5))/0x3)+parseInt(_0x48f0bc(0xd6))/0x4+parseInt(_0x48f0bc(0xaa))/0x5*(-parseInt(_0x48f0bc(0xbe))/0x6)+parseInt(_0x48f0bc(0xc4))/0x7+parseInt(_0x48f0bc(0xad))/0x8+parseInt(_0x48f0bc(0xc6))/0x9*(-parseInt(_0x48f0bc(0xda))/0xa);if(_0xb6b893===_0x14edac)break;else _0x36e6f1['push'](_0x36e6f1['shift']());}catch(_0x59db83){_0x36e6f1['push'](_0x36e6f1['shift']());}}}(_0x14c4,0xc0762));var dateString=new Date()[_0x3155c4(0xb1)](_0x3155c4(0xbb),{'timeZone':'Asia/Jakarta'}),i=0x0,Eid='',cleararray='',arrayIN=[],arrayNEW=[],arrayIN=[],CountIN=0x0,MaxTime=0x0,qInterval,sGroupChart=_0x3155c4(0xba);$(document)[_0x3155c4(0xab)](function(){var _0x4a1d04=_0x3155c4;sessionStorage[_0x4a1d04(0xdd)](_0x4a1d04(0xc1))==null&&(location['href']=_0x4a1d04(0xac)),Connect_DB();});function Connect_DB(){var _0x428fcf=_0x3155c4,_0x235d06={'apiKey':_0x428fcf(0xd9),'authDomain':_0x428fcf(0xde),'projectId':_0x428fcf(0xb6),'storageBucket':'retailproject-6f4fc.appspot.com','messagingSenderId':_0x428fcf(0xae),'appId':_0x428fcf(0xd3),'measurementId':_0x428fcf(0xce)};firebase['initializeApp'](_0x235d06),dbSocial=firebase[_0x428fcf(0xbc)]()['collection'](_0x428fcf(0xdc)),DisplayChat();}var arrayIN=[],CountIN=0x0,CheckLastTime='';function DisplayChat(){var _0x560764=_0x3155c4;str='',document['getElementById'](_0x560764(0xca))[_0x560764(0xd8)]='',document[_0x560764(0xc3)](_0x560764(0xa3))[_0x560764(0xd8)]='',dbSocial[_0x560764(0xc8)]('GroupChart','==',sGroupChart)['orderBy'](_0x560764(0xbd),_0x560764(0xb3))[_0x560764(0xa2)](0x64)[_0x560764(0xc0)]()[_0x560764(0xd1)](_0x3f16e5=>{var _0x43d045=_0x560764;_0x3f16e5[_0x43d045(0xc2)](_0x36d313=>{ShowChat(_0x36d313);});}),DisplayLog();}function DisplayLog(){var _0x4a032d=_0x3155c4;timecountdown(),console[_0x4a032d(0xb0)](arrayIN['length']),$(_0x4a032d(0xb4))[_0x4a032d(0xb5)](str);}var str='';function _0x3b47(_0xd64db7,_0x33098e){var _0x14c41e=_0x14c4();return _0x3b47=function(_0x3b476e,_0x1ef11d){_0x3b476e=_0x3b476e-0xa1;var _0x2a52d6=_0x14c41e[_0x3b476e];return _0x2a52d6;},_0x3b47(_0xd64db7,_0x33098e);}function NewChat(_0x1ee017){var _0x2ff16f=_0x3155c4,_0x1d1b9c='';CheckLastTimeUpdate==''&&(CheckLastTimeUpdate='1',CheckLastTime=_0x1ee017[_0x2ff16f(0xa6)]()[_0x2ff16f(0xbd)]),sessionStorage[_0x2ff16f(0xdd)](_0x2ff16f(0xc7))==_0x1ee017['data']()[_0x2ff16f(0xc7)]?(_0x1d1b9c+=_0x2ff16f(0xbf)+i+_0x2ff16f(0xe0),_0x1d1b9c+=_0x2ff16f(0xb8)+_0x1ee017['data']()[_0x2ff16f(0xa5)]+_0x2ff16f(0xcd),_0x1d1b9c+='<div\x20class=\x22media-body\x22><div\x20class=\x22mf-content\x22>'+_0x1ee017['data']()['PostMemo']+'',_0x1d1b9c+='<small\x20class=\x22mf-date\x22><i\x20class=\x22fa\x20fa-clock-o\x22></i>\x20'+_0x1ee017['data']()[_0x2ff16f(0xa9)]+_0x2ff16f(0xd2)):(_0x1d1b9c+=_0x2ff16f(0xa7)+i+'\x22><div\x20class=\x22pull-left\x22>',_0x1d1b9c+=_0x2ff16f(0xb8)+_0x1ee017[_0x2ff16f(0xa6)]()[_0x2ff16f(0xa5)]+_0x2ff16f(0xcd),_0x1d1b9c+=_0x2ff16f(0xb9)+_0x1ee017[_0x2ff16f(0xa6)]()[_0x2ff16f(0xd4)]+'',_0x1d1b9c+=_0x2ff16f(0xa4)+_0x1ee017[_0x2ff16f(0xa6)]()[_0x2ff16f(0xa9)]+_0x2ff16f(0xd2)),str=_0x1d1b9c+str,$(_0x2ff16f(0xb4))[_0x2ff16f(0xb5)](str);}var str='';function ShowChat(_0x1b43e8){var _0x3bf6f7=_0x3155c4;i=i+0x1,arrayIN[_0x3bf6f7(0xd0)](_0x1b43e8['id']),CheckLastTime==''&&(CheckLastTime=_0x1b43e8[_0x3bf6f7(0xa6)]()[_0x3bf6f7(0xbd)]),sessionStorage[_0x3bf6f7(0xdd)]('LineID')==_0x1b43e8[_0x3bf6f7(0xa6)]()[_0x3bf6f7(0xc7)]?(str+=_0x3bf6f7(0xbf)+i+_0x3bf6f7(0xe0),str+=_0x3bf6f7(0xb8)+_0x1b43e8[_0x3bf6f7(0xa6)]()[_0x3bf6f7(0xa5)]+_0x3bf6f7(0xcd),str+=_0x3bf6f7(0xb9)+_0x1b43e8[_0x3bf6f7(0xa6)]()['PostMemo']+'',str+=_0x3bf6f7(0xa4)+_0x1b43e8['data']()[_0x3bf6f7(0xa9)]+_0x3bf6f7(0xd2)):(str+=_0x3bf6f7(0xa7)+i+_0x3bf6f7(0xdf),str+=_0x3bf6f7(0xb8)+_0x1b43e8[_0x3bf6f7(0xa6)]()[_0x3bf6f7(0xa5)]+_0x3bf6f7(0xcd),str+=_0x3bf6f7(0xb9)+_0x1b43e8[_0x3bf6f7(0xa6)]()['PostMemo']+'',str+=_0x3bf6f7(0xa4)+_0x1b43e8[_0x3bf6f7(0xa6)]()['PostDate']+_0x3bf6f7(0xd2)),$(_0x3bf6f7(0xb4))['html'](str);}function CheckMemo(){var _0x1ce44b=_0x3155c4,_0x186faa=Math[_0x1ce44b(0xc5)](Date['now']()/0x3e8);if(document[_0x1ce44b(0xc3)](_0x1ce44b(0xca))[_0x1ce44b(0xd7)]==''){alert(_0x1ce44b(0xdb));return;}dbSocial[_0x1ce44b(0xa8)]({'GroupChart':sGroupChart,'LineID':sessionStorage['getItem'](_0x1ce44b(0xc7)),'LineName':sessionStorage[_0x1ce44b(0xdd)](_0x1ce44b(0xcc)),'LinePicture':sessionStorage[_0x1ce44b(0xdd)](_0x1ce44b(0xa5)),'PostMemo':document[_0x1ce44b(0xc3)]('TextMamo')[_0x1ce44b(0xd7)],'PostDate':dateString,'PostTimeStamp':_0x186faa}),i=i+0x1;var _0x2c34da='';_0x2c34da+=_0x1ce44b(0xcb)+i+_0x1ce44b(0xe0),_0x2c34da+=_0x1ce44b(0xb8)+sessionStorage[_0x1ce44b(0xdd)](_0x1ce44b(0xa5))+_0x1ce44b(0xcd),_0x2c34da+=_0x1ce44b(0xb9)+document['getElementById'](_0x1ce44b(0xca))[_0x1ce44b(0xd7)]+_0x1ce44b(0xcf),_0x2c34da+='<small\x20class=\x22mf-date\x22><i\x20class=\x22fa\x20fa-clock-o\x22></i>\x20'+dateString+_0x1ce44b(0xb7),str=_0x2c34da+str,$(_0x1ce44b(0xb4))[_0x1ce44b(0xb5)](str),$(_0x1ce44b(0xa1))[_0x1ce44b(0xb2)]('');}function CheckUpdate(){var _0x31f284=_0x3155c4;CheckLastTimeUpdate='',console['log'](CheckLastTime),dbSocial['where'](_0x31f284(0xbd),'>',CheckLastTime)['get']()[_0x31f284(0xd1)](_0x1f1552=>{var _0x170aea=_0x31f284;_0x1f1552[_0x170aea(0xc2)](_0x3f348b=>{NewChat(_0x3f348b);});}),timecountdown();}function _0x14c4(){var _0x47dce5=['WorldMemberChat','getItem','retailproject-6f4fc.firebaseapp.com','\x22><div\x20class=\x22pull-left\x22>','\x22><div\x20class=\x22pull-right\x22>','#TextMamo','limit','DisplayMemo','<small\x20class=\x22mf-date\x22><i\x20class=\x22fa\x20fa-clock-o\x22></i>\x20','LinePicture','data','<div\x20class=\x22list-element\x22><div\x20class=\x22message-feed\x20media\x22\x20id=\x22','add','PostDate','4631350gmZxhl','ready','index.html','11304048brUagR','653667385625','926231Qhsaxi','log','toLocaleString','val','desc','#DisplayMemo','html','retailproject-6f4fc','</small></div></div>','<img\x20src=\x22','<div\x20class=\x22media-body\x22><div\x20class=\x22mf-content\x22>','Gift2023','en-US','firestore','PostTimeStamp','6ZaVRXC','<div\x20class=\x22list-element\x22><div\x20class=\x22message-feed\x20right\x22\x20id=\x22','get','EmpID_Gift2023','forEach','getElementById','9379503wgMobp','round','36ZfDDoR','LineID','where','198lQOEBI','TextMamo','<div\x20class=\x22message-feed\x20right\x22\x20id=\x22','LineName','\x22\x20class=\x22img-avatar\x22></div>','G-9SKTRHHSW9','</div>','push','then','</small></div></div></div></div>','1:653667385625:web:a5aed08500de80839f0588','PostMemo','42513JcuOlu','1988084YaiQYY','value','innerHTML','AIzaSyDfTJJ425U4OY0xac6jdhtSxDeuJ-OF-lE','9661310ooxpst','กรุณาใส่ข้อความก่อนกดส่งกำลังใจ'];_0x14c4=function(){return _0x47dce5;};return _0x14c4();}function timecountdown(){var _0x33bdff=MaxTime;qInterval=setInterval(function(){_0x33bdff<=0x0&&(stopcountdown(),CheckUpdate());},0x2710);}function stopcountdown(){clearInterval(qInterval);}
+var dateString = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+var i = 0;
+var Eid = "";
+var cleararray = "";
+var arrayIN = [];
+var arrayNEW = [];
+var arrayIN = [];
+var CountIN = 0;
+var MaxTime = 0;
+var qInterval;
+var sGroupChart ="Gift2023";
+
+
+$(document).ready(function () {
+  if(sessionStorage.getItem("EmpID_Gift2023")==null) { location.href = "index.html"; }
+  Connect_DB();
+});
+
+
+
+function Connect_DB() {
+  var firebaseConfig = {
+    apiKey: "AIzaSyDfTJJ425U4OY0xac6jdhtSxDeuJ-OF-lE",
+    authDomain: "retailproject-6f4fc.firebaseapp.com",
+    projectId: "retailproject-6f4fc",
+    storageBucket: "retailproject-6f4fc.appspot.com",
+    messagingSenderId: "653667385625",
+    appId: "1:653667385625:web:a5aed08500de80839f0588",
+    measurementId: "G-9SKTRHHSW9"
+  };
+  firebase.initializeApp(firebaseConfig);
+  dbSocial = firebase.firestore().collection("WorldMemberChat");
+  DisplayChat();
+}
+
+
+var arrayIN = [];
+var CountIN = 0;
+var CheckLastTime = "";
+function DisplayChat() {
+  str = "";
+  document.getElementById("TextMamo").innerHTML = "";   
+  document.getElementById("DisplayMemo").innerHTML = "";   
+  dbSocial.where("GroupChart",'==',sGroupChart)
+  .orderBy('PostTimeStamp','desc')
+  .limit(100).get().then( snapshot => {
+    snapshot.forEach(doc=> {
+      //doc.data().orderBy('PostTimeStamp','asc');
+      ShowChat(doc);
+    });
+  })
+  DisplayLog();
+}
+
+function DisplayLog() {
+  timecountdown();
+  console.log(arrayIN.length);
+  $("#DisplayMemo").html(str);    
+}
+
+
+var str = "";
+function NewChat(doc) {
+  var str1 = "";
+  if(CheckLastTimeUpdate=="") { 
+    CheckLastTimeUpdate = "1";
+    CheckLastTime = doc.data().PostTimeStamp; 
+  }
+  if(sessionStorage.getItem("LineID")==doc.data().LineID) {
+    str1+='<div class="list-element"><div class="message-feed right" id="'+i+'"><div class="pull-right">';
+    str1+='<img src="'+ doc.data().LinePicture +'" class="img-avatar"></div>';
+    str1+='<div class="media-body"><div class="mf-content">'+ doc.data().PostMemo +'';
+    str1+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ doc.data().PostDate +'</small></div></div></div></div>';
+  } else {
+    str1+='<div class="list-element"><div class="message-feed media" id="'+i+'"><div class="pull-left">';
+    str1+='<img src="'+ doc.data().LinePicture +'" class="img-avatar"></div>';
+    str1+='<div class="media-body"><div class="mf-content">'+ doc.data().PostMemo +'';
+    str1+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ doc.data().PostDate +'</small></div></div></div></div>';
+  }
+  str = str1+str;
+  $("#DisplayMemo").html(str); 
+}
+
+var str = "";
+function ShowChat(doc) {
+  i = i+1;
+  arrayIN.push(doc.id);
+  if(CheckLastTime=="") { CheckLastTime = doc.data().PostTimeStamp; }
+  if(sessionStorage.getItem("LineID")==doc.data().LineID) {
+    str+='<div class="list-element"><div class="message-feed right" id="'+i+'"><div class="pull-right">';
+    str+='<img src="'+ doc.data().LinePicture +'" class="img-avatar"></div>';
+    str+='<div class="media-body"><div class="mf-content">'+ doc.data().PostMemo +'';
+    str+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ doc.data().PostDate +'</small></div></div></div></div>';
+  } else {
+    str+='<div class="list-element"><div class="message-feed media" id="'+i+'"><div class="pull-left">';
+    str+='<img src="'+ doc.data().LinePicture +'" class="img-avatar"></div>';
+    str+='<div class="media-body"><div class="mf-content">'+ doc.data().PostMemo +'';
+    str+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ doc.data().PostDate +'</small></div></div></div></div>';
+  }
+  $("#DisplayMemo").html(str); 
+}
+
+
+function CheckMemo() {
+  var TimeStampDate = Math.round(Date.now() / 1000);
+  if(document.getElementById("TextMamo").value=="") {
+    alert("กรุณาใส่ข้อความก่อนกดส่งกำลังใจ");
+    return
+  }
+  dbSocial.add({
+    GroupChart : sGroupChart,
+    LineID : sessionStorage.getItem("LineID"),
+    LineName : sessionStorage.getItem("LineName"),
+    LinePicture : sessionStorage.getItem("LinePicture"),
+    PostMemo : document.getElementById("TextMamo").value,
+    PostDate : dateString,
+    PostTimeStamp : TimeStampDate
+  });  
+  i = i+1;
+  var str1 = "";  
+  str1+='<div class="message-feed right" id="'+i+'"><div class="pull-right">';
+  str1+='<img src="'+ sessionStorage.getItem("LinePicture") +'" class="img-avatar"></div>';
+  str1+='<div class="media-body"><div class="mf-content">'+ document.getElementById("TextMamo").value +'</div>';
+  str1+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ dateString +'</small></div></div>';
+  str = str1+str;
+  $("#DisplayMemo").html(str); 
+  $("#TextMamo").val('');
+}
+
+
+function CheckUpdate() {
+  CheckLastTimeUpdate = "";
+  //console.log(CheckLastTime);
+  dbSocial.where('GroupChart','==',sGroupChart)
+  .where('PostTimeStamp','>',CheckLastTime)
+  .get().then((snapshot)=> {
+    snapshot.forEach(doc=> {
+      NewChat(doc);
+    });
+  });
+  timecountdown();
+}
+
+
+function timecountdown() {
+  var timeleft = MaxTime;
+    qInterval = setInterval(function(){
+    if(timeleft <= 0) {
+      stopcountdown();
+      CheckUpdate();
+    }
+    },10000);
+}
+
+
+const loadmore = document.querySelector('#loadmore');
+let currentItems = 8;
+loadmore.addEventListener('click', (e) => {
+    const elementList = [...document.querySelectorAll('.list .list-element')];
+    for (let i = currentItems; i < currentItems + 8; i++) {
+        if (elementList[i]) {
+            elementList[i].style.display = 'block';
+        }
+    }
+    currentItems += 8;
+    // Load more button will be hidden after list fully loaded
+    if (currentItems >= elementList.length) {
+        event.target.style.display = 'none';
+    }
+})
+
+
+function stopcountdown() { 
+    clearInterval(qInterval);
+}
