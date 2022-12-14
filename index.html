@@ -32,8 +32,6 @@
       padding:0px;
     }
   </style>
-
-
 </head>
 
 <body class="body1" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" style="background-color: #fff;">
@@ -64,26 +62,50 @@
         <div style="margin:auto;">
           <div style="font-size: 12px; font-weight: 600;padding-bottom: 0px;">LINE Retail Society<br>ชวนคุณร่วมกิจกรรม ลุ้นรับของขวัญปีใหม่<br><br>
             <img src="img/box.png" style="width:90px;"></div>
-          <div class="btn-t3" onclick="window.location.href='home.html';" style="margin-top:15px;padding:10px 25px;">คลิกเพื่อร่วมลุ้นของขวัญปีใหม่</div>
+          <div class="btn-t3" onclick="window.location.href='home.html';" style="margin-top:15px;padding:10px 25px;">คลิกเพื่อร่วมลุ้นของขวัญปีใหม่</div><br>
+          <div class="btn-t1" onclick="ClickBox()" style="margin-top:10px;padding:10px 25px;">ชวนเพื่อนของคุณลุ้นของขวัญปีใหม่</div>
         </div>
       </div>
       <div id="ShowRewards" style="display: none;margin-top:10px;">
         <div style="margin:auto;">
-          <div style="font-size: 12px; font-weight: 600;padding-bottom: 0px;">LINE Retail Society<br>ขอบคุณสำหรับการเข้าร่วมกิจกรรม<br>ลุ้นรับของขวัญปีใหม่<br><br>
-            <img src="img/box.png" style="width:90px;"></div>
-          <div class="btn-t2" onclick="window.location.href='giftforyou.html';" style="margin-top:15px;padding:10px 25px;">คลิกเพื่อดูรายการของขวัญปีใหม่ของคุณ</div>
+          <div style="font-size: 12px; font-weight: 600;padding-bottom: 0px;">LINE Retail Society<br>ขอบคุณสำหรับการเข้าร่วมกิจกรรม<br> ลุ้นรับของขวัญปีใหม่<br><br>
+          <img src="img/box.png" style="width:90px;"></div>
+          <div class="btn-t2" onclick="window.location.href='giftforyou.html';" style="margin-top:15px;padding:10px 25px;">คลิกเพื่อดูรายการของขวัญปีใหม่ของคุณ</div><br>
+          <div class="btn-t1" onclick="ClickBox()" style="margin-top:10px;padding:10px 25px;">ชวนเพื่อนของคุณลุ้นของขวัญปีใหม่</div>
         </div>
       </div>
+
+
     </div>
   </main>
 
+
+
   <div id="id01" class="w3-modal w3-animate-opacity">
     <div class="w3-modal-content w3-card-4" style="background: #fff;">
-      <div class="w3-container" style="width:100%;margin:auto;height: 350px;">
+      <div class="w3-container" style="width:100%;margin:auto;min-height: 350px;">
+        <center>
+          <div style="margin:30px auto 15px auto; color:#f68b1f;"><b>ชวนเพื่อนสแกน QR Code<br>เพื่อลุ้นรับของขวัญปีใหม่</b></div>
+          <div style="padding:10px auto 30px auto;"><img src="QRCode-Newyear.png" style="width:90%;"></div>
+          <div class="clr"></div>
+          <div class="btn-t3" onclick="CloseAll()">ปิดหน้าต่างนี้</div>
+        </center>
       </div>
+      <div class="clr" style="height: 30px;"></div>
     </div>
   </div>
 
+
+<!--
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <div class="footer-main" style="color:#fff;">
+      @<span class="footer-font-greenn" style="color:#fff;">LINE</span> 
+      <span class="footer-font-navi" style="color:#fff;">Retail</span> 
+      <span class="footer-font-blue" style="color:#fff;">So</span><span class="footer-font-org" style="color:#fff;">ciety</span>
+    </div>
+  </footer>
+-->
 
 <script src="./js/index.js"></script>
 </body>
