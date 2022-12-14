@@ -120,10 +120,14 @@ function CheckMemo() {
   });  
   i = i+1;
   var str1 = "";  
-  str1+='<div class="message-feed right" id="'+i+'"><div class="pull-right">';
+  str1+='<div class="list-element"><div class="message-feed right" id="'+i+'"><div class="pull-right">';
   str1+='<img src="'+ sessionStorage.getItem("LinePicture") +'" class="img-avatar"></div>';
-  str1+='<div class="media-body"><div class="mf-content">'+ document.getElementById("TextMamo").value +'</div>';
-  str1+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ dateString +'</small></div></div>';
+  str1+='<div class="media-body"><div class="mf-content">'+ doc.data().PostMemo +'';
+  str1+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ dateString +'</small></div></div></div></div>';
+  //str1+='<div class="message-feed right" id="'+i+'"><div class="pull-right">';
+  //str1+='<img src="'+ sessionStorage.getItem("LinePicture") +'" class="img-avatar"></div>';
+  //str1+='<div class="media-body"><div class="mf-content">'+ document.getElementById("TextMamo").value +'</div>';
+  //str1+='<small class="mf-date"><i class="fa fa-clock-o"></i> '+ dateString +'</small></div></div>';
   str = str1+str;
   $("#DisplayMemo").html(str); 
   $("#TextMamo").val('');
